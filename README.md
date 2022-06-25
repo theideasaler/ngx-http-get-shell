@@ -1,6 +1,6 @@
 # ngx-http-get-shell
 
-A lightweight Angular GET shell component to help reduce creating repetitive code of HttpClient GET APIs. This component has built-in support for client-side cache storage supported by IndexedDB.
+A lightweight Angular GET shell component to help reduce creating repetitive code of HttpClient GET APIs. This component has built-in support for **client-side cache** storage supported by IndexedDB.
 
 ## Installation
 
@@ -48,12 +48,11 @@ This library is super easy-to-use, all you need is to pass the `url` you want to
 | I/O | name | type | description |
 |------|------|---------|-------------|
 | @Input | url | string |  The URL to fetch data from. It will be used as the key from the cache. |
-| @Input | maxStale | number | The template reference will be used to take the fetched and processed data. |
-| @Input | templateRef | TemplateRef | Max Stale duration in milliseconds, default is 0, which means no cache. |
+| @Input | maxStale | number | Max Stale duration in milliseconds, default is 0, which means no cache. |
+| @Input | templateRef | TemplateRef | The template reference will be used to take the fetched and processed data. |
 | @Input | dataProcessor | Function | The processor for the fetched data before it is emitted. |
 | @Input | errorHandler | Function | The error handler for the data fetching. |
 | @Output | dataLoaded | EventEmitter | Emitted when the data is loaded and processed. You can use this for your custom data handling. |
--------------
 
 ## IndexedDbService
 This library also exposes `IndexedDbService` for you so that you can have more control of the indexedDB for your caching.
@@ -66,4 +65,3 @@ This library also exposes `IndexedDbService` for you so that you can have more c
 | removeItem | instance | Deletes an item from the database |
 | clearAll | instance | Clear all items from the database |
 | getDb | instance | The the indexed db instance used by this service |
--------------

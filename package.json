@@ -1,6 +1,6 @@
 {
   "name": "ngx-http-get-shell",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "author": "Neo Liu (theideasaler@gmail.com)",
   "license": "MIT",
   "scripts": {
@@ -9,6 +9,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "build:library": "ng build ngx-http-get-shell --configuration library",
     "publish": "cd ./dist/ngx-http-get-shell && npm publish",
     "pack": "cd ./dist/ngx-http-get-shell && npm pack"
   },
