@@ -3,5 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ngx-http-get-shell": {
+      "projectType": "library",
+      "root": "projects/ngx-http-get-shell",
+      "sourceRoot": "projects/ngx-http-get-shell/src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-http-get-shell/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-http-get-shell/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-http-get-shell/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-http-get-shell/src/test.ts",
+            "tsConfig": "projects/ngx-http-get-shell/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-http-get-shell/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
   }
 }

@@ -1,0 +1,27 @@
+{
+  "name": "ngx-http-get-shell",
+  "version": "0.0.1",
+  "author": "Neo Liu (theideasaler@gmail.com)",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^14.0.0",
+    "@angular/core": "^14.0.0"
+  },
+  "dependencies": {
+    "idb": "^7.0.2",
+    "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theideasaler/ngx-http-get-shell.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theideasaler/ngx-http-get-shell/issues"
+  },
+  "keywords": [
+    "angular",
+    "javascript",
+    "http",
+    "shell"
+  ]
+}
